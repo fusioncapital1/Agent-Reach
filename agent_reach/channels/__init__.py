@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Channel registry — lists all supported platforms for doctor checks.
 """
@@ -23,7 +23,7 @@ from .weibo import WeiboChannel
 from .xiaoyuzhou import XiaoyuzhouChannel
 from .v2ex import V2EXChannel
 from .xueqiu import XueqiuChannel
-
+from .coingecko import CoingeckoChannel
 
 
 ALL_CHANNELS: List[Channel] = [
@@ -43,6 +43,7 @@ ALL_CHANNELS: List[Channel] = [
     RSSChannel(),
     ExaSearchChannel(),
     WebChannel(),
+    CoingeckoChannel(),
 ]
 
 
